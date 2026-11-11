@@ -1,0 +1,49 @@
+id = "computercraft"
+kind = "native-mod"
+name = "computercraft"
+summary = "A Horizon port of computercraft."
+description = """
+A port of [computercraft](cc-tweaked/CC-Tweaked) for Horizon.
+
+**Implemented so far**
+
+- One block, one program, one observable:
+- `computercraft:computer_normal` — `facing` (4) × `state` (`off`/`on`/`blinking`)
+- = 12 states on the `minecraft:stone` template, upstream's model shape
+- (`minecraft:block/orientable` with `computer_normal_front`/`_side`/`_top`;
+- the running state uses upstream's lit `computer_on` face), self-drop loot,
+- the upstream crafting shape rewritten to 26.3 ingredients, one creative tab.
+- A block entity (`computercraft:computer`) keeping `Program`, `Buffer`,
+- `Running`, `Powered` in its saved compound; it ticks, boots its program once,
+
+**Not yet ported**
+
+- The ROM**: 105 Lua files (`bios.lua`, 20 `rom/apis`, 23 `rom/modules`, 60
+- `rom/programs`) and the shell. This needs a real Lua 5.2 VM; rung A is
+- blocked by the pin's lock (record above), so the engine is the unblocker.
+- Language features**: tables, functions and closures, `break`, `repeat`,
+- `in`/generic `for`, multiple returns and multiple assignment, metamethods,
+- `pcall`/`error`, string/table/math/os libraries, `require`/`dofile`,
+- coroutines (the basis of every CC API), varargs, `#` on tables, integer
+- division `//`, `goto`, long strings `[[…]]`, hex literals, `\\ddd` escapes.
+
+Original copyright and licence notices are kept in this repository. Pinned to
+Horizon 1d63e0a and horizon-mixins 5a64af93. Help with the remaining slices is
+welcome.
+"""
+authors = ["AdLf0208"]
+owners = ["AdLf0208"]
+owner_ids = [107615167]
+license = "CCPL-1.0"
+source = "https://github.com/AdLf0208/computercraft"
+icon = "icons/computercraft.png"
+categories = ["utility"]
+tags = ["port", "horizon"]
+
+[[versions]]
+version = "0.1.0"
+published = "2026-11-10"
+game = "26.3"
+file = "computercraft.hnmod"
+sha256 = "d3da2453f503f17d8a768f1dd7b946917ef29cf7d3df1c90ca89e518360b1182"
+changelog = "First release"

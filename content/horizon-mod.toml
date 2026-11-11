@@ -1,0 +1,11 @@
+# Port-owned content mod for CC: Tweaked 1.121.0: slice 1's computer block.
+# The textures are the upstream mod's own CCPL assets (see ../LICENSE and
+# ../LICENSE-NOTICE.md); everything else is written for this port.
+id = "computercraft"
+name = "CC: Tweaked"
+version = "0.1.0"
+description = "CC: Tweaked slice 1: the Computer block and its terminal"
+authors = ["Daniel Ratcliffe", "Aaron Mills", "SquidDev"]
+api = "0.2"
+side = "both"
+capabilities = ["registries"]

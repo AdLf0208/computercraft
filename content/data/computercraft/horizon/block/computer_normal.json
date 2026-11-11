@@ -1,0 +1,14 @@
+{
+  "template": "minecraft:stone",
+  "properties": {
+    "sounds": "minecraft:stone",
+    "map_color": 6,
+    "requires_tool": false
+  },
+  "state_properties": {
+    "facing": { "type": "enum", "values": ["north", "south", "west", "east"] },
+    "state": { "type": "enum", "values": ["off", "on", "blinking"] }
+  },
+  "default_state": { "facing": "north", "state": "off" },
+  "item": true
+}

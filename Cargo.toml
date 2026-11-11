@@ -1,0 +1,21 @@
+[package]
+# Ported from: CC: Tweaked 1.21.1-forge-1.121.0 (cc-tweaked/CC-Tweaked),
+# Minecraft Java 1.21.1 NeoForge, licence CCPL-1.0 (ComputerCraft Public
+# License). Clean-room Rust rewrite of the observed behaviour; the CCPL text
+# travels in LICENSE and the derivative obligation is stated in
+# LICENSE-NOTICE.md and notes.md.
+name = "horizon-computercraft"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.95"
+license = "LicenseRef-CCPL"
+description = "CC: Tweaked for Horizon, slice 1: the computer block and its Lua subset terminal"
+
+[lib]
+# This exact source is also injected as a same-crate module by horizon-mixins.
+path = "mixins/computercraft/runtime.rs"
+
+[dependencies]
+
+[workspace]
+resolver = "2"

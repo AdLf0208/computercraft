@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "SSS",
+    "SRS",
+    "SGS"
+  ],
+  "key": {
+    "S": "minecraft:stone",
+    "R": "minecraft:redstone",
+    "G": "minecraft:glass_pane"
+  },
+  "result": {
+    "id": "computercraft:computer_normal",
+    "count": 1
+  }
+}
